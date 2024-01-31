@@ -12,7 +12,10 @@ from helpers import (
     disp_assignment_detail,
     update_course,
     delete_course,
-    create_assignment
+    create_assignment,
+    #fourth level
+    update_assignment,
+    delete_assignment
 )
 
 # Item in the menu_level is a list containing the followings:
@@ -37,6 +40,18 @@ menu_map = [ \
                         "NUM", \
                         disp_assignment_detail, \
                         [ \
+                            [ \
+                                "Type U or u to update the assignment", \
+                                "U", \
+                                update_assignment, \
+                                [] \
+                            ], \
+                            [ \
+                                "Type D or d to delete the assignment", \
+                                "D", \
+                                delete_assignment, \
+                                [] \
+                            ], \
                             [ \
                                 "Type B or b to go back to the previous menu", \
                                 "B", \
@@ -127,24 +142,17 @@ def execute_choice(choice, cur_menu):
 
 def main():
     while True:
-        print("menu_level: ", menu_level)
+        # print("menu_level: ", menu_level)
         
         cur_menu = menu_map
         for idx, *_ in menu_level:
             cur_menu = cur_menu[idx][3]
 
-        print("cur_menu: ", cur_menu[0][0])
+        # print("cur_menu: ", cur_menu[0][0])
         
         disp_menu(cur_menu)
         choice = input("> ").upper()
         execute_choice(choice, cur_menu)
-
-        # if choice == "0":
-        #     exit_program()
-        # elif choice == "1":
-        #     helper_1()
-        # else:
-        #     print("Invalid choice")
 
 if __name__ == "__main__":
     main()
