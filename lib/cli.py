@@ -139,6 +139,8 @@ def execute_choice(choice, cur_menu):
             menu_item[2](choice, menu_level)
             return
     print("Invalid input!")
+    if len(menu_level):
+        menu_level[-1][1](menu_level[-1][2], menu_level)
 
 def main():
     while True:
