@@ -13,4 +13,4 @@ It is developed using python and sqlite3.
 - Run CLI: Run 'python lib/cli.py' from the root project directory.
 
 ## Demo
-![](https://github.com/kjbyun0/phase-3-my-final-project/blob/main/ForREADME.gif)
+![](https://github.com/kjbyun0/phase-3-my-final-project/blob/main/ForReadme.gif)
