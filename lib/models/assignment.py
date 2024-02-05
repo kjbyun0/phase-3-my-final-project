@@ -44,7 +44,7 @@ class Assignment:
             dt_due_date = datetime.strptime(due_date, "%m-%d-%Y")
             self._due_date = f'{dt_due_date.month}-{dt_due_date.day}-{dt_due_date.year}'
         except Exception as exc:
-            print("deu_date must be a string in '%m-%d-%Y format")
+            raise ValueError("due_date must be a string in '%m-%d-%Y' format")
 
     @property
     def course_id(self):

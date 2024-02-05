@@ -52,9 +52,9 @@ class Course:
         if isinstance(semester, str) and \
             semester[:-5].title() in ('Spring', 'Summer', 'Fall') and \
             semester[-4:].isnumeric():
-            self._semester = semester.title()       #bkj - check it
+            self._semester = semester.title()
         else:
-            raise ValueError("Course's semester must be in 'season year' format")
+            raise ValueError("Course's semester must be in valid 'season year' format")
     
     @classmethod
     def create_table(cls):
@@ -145,7 +145,6 @@ class Course:
             FROM courses
             WHERE id = ?
         """
-
         row = CURSOR.execute(sql, (id,)).fetchone()
         return cls.instance_from_db(row) if row else None
     
