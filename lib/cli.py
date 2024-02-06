@@ -24,106 +24,106 @@ from helpers import (
 # - choice: user input at the current menu
 # - more custome data can be added if needed.
 menu_level = []
-menu_map = [ \
-    [ \
-        "Type C or c to see all courses", \
-        "C", \
-        disp_course_list, \
-        [ \
-            [ \
-                "Select a number for detail course information", \
-                "NUM", \
-                disp_course_detail, \
-                [ \
-                    [ \
-                        "Select a number for more detail assingment information", \
-                        "NUM", \
-                        disp_assignment_detail, \
-                        [ \
-                            [ \
-                                "Type U or u to update the assignment", \
-                                "U", \
-                                update_assignment, \
-                                [] \
-                            ], \
-                            [ \
-                                "Type D or d to delete the assignment", \
-                                "D", \
-                                delete_assignment, \
-                                [] \
-                            ], \
-                            [ \
-                                "Type B or b to go back to the previous menu", \
-                                "B", \
-                                back_to_prev_menu, \
-                                [] \
-                            ], \
-                            [ \
-                                "Type E or e to exit", \
-                                "E", \
-                                exit_program, \
-                                [] \
-                            ] \
-                        ] \
-                    ], \
-                    [ \
-                        "Type U or u to update the course", \
-                        "U", \
-                        update_course, \
-                        [] \
-                    ], \
-                    [ \
-                        "Type D or d to delete the course", \
-                        "D", \
-                        delete_course, \
-                        [] \
-                    ], \
-                    [ \
-                        "Type A or a to add a new assignment", \
-                        "A", \
-                        create_assignment, \
-                        [] \
-                    ], \
-                    [ \
-                        "Type B or b to go back to the previous menu", \
-                        "B", \
-                        back_to_prev_menu, \
-                        [] \
-                    ], \
-                    [ \
-                        "Type E or e to exit", \
-                        "E", \
-                        exit_program, \
-                        [] \
-                    ] \
-                ] \
-            ], \
-            [ \
-                "Type A or a to add a new course", \
-                "A", \
-                create_course, \
-                [] \
+menu_map = [
+    [
+        "Type C or c to see all courses",
+        "C",
+        disp_course_list,
+        [
+            [
+                "Select a number for detail course information",
+                "NUM",
+                disp_course_detail,
+                [
+                    [
+                        "Select a number for more detail assingment information",
+                        "NUM",
+                        disp_assignment_detail,
+                        [
+                            [
+                                "Type U or u to update the assignment",
+                                "U",
+                                update_assignment,
+                                []
+                            ],
+                            [
+                                "Type D or d to delete the assignment",
+                                "D",
+                                delete_assignment,
+                                []
+                            ],
+                            [
+                                "Type B or b to go back to the previous menu",
+                                "B",
+                                back_to_prev_menu,
+                                []
+                            ],
+                            [
+                                "Type E or e to exit",
+                                "E",
+                                exit_program,
+                                []
+                            ]
+                        ]
+                    ],
+                    [
+                        "Type U or u to update the course",
+                        "U",
+                        update_course,
+                        []
+                    ],
+                    [
+                        "Type D or d to delete the course",
+                        "D",
+                        delete_course,
+                        []
+                    ],
+                    [
+                        "Type A or a to add a new assignment",
+                        "A",
+                        create_assignment,
+                        []
+                    ],
+                    [
+                        "Type B or b to go back to the previous menu",
+                        "B",
+                        back_to_prev_menu,
+                        []
+                    ],
+                    [
+                        "Type E or e to exit",
+                        "E",
+                        exit_program,
+                        []
+                    ]
+                ]
             ],
-            [ \
-                "Type B or b to go back to the previous menu", \
-                "B", \
-                back_to_prev_menu, \
-                [] \
-            ], \
-            [ \
-                "Type E or e to exit", \
-                "E", \
-                exit_program, \
-                [] \
-            ] \
-        ] \
-    ], \
-    [ \
-        "Type E or e to exit", \
-        "E", \
-        exit_program, \
-        [] \
-    ] \
+            [
+                "Type A or a to add a new course",
+                "A",
+                create_course,
+                []
+            ],
+            [
+                "Type B or b to go back to the previous menu",
+                "B",
+                back_to_prev_menu,
+                []
+            ],
+            [
+                "Type E or e to exit",
+                "E",
+                exit_program,
+                []
+            ]
+        ]
+    ],
+    [
+        "Type E or e to exit",
+        "E",
+        exit_program,
+        []
+    ]
 ]
 
 def disp_menu(cur_menu):
