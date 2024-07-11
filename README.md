@@ -14,3 +14,5 @@ It is developed using python and sqlite3.
 
 ## Demo
 ![](https://github.com/kjbyun0/phase-3-my-final-project/blob/main/ForReadme.gif)
+
+Video Walkthrough: [https://youtu.be/l9j-u6UhwVc](https://youtu.be/l9j-u6UhwVc)
